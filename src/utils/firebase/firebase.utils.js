@@ -28,12 +28,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDxRNwVr14DcPbLsy8kJsaV_qePooWRmkQ",
-  authDomain: "crwn-clothing-db-35617.firebaseapp.com",
-  projectId: "crwn-clothing-db-35617",
-  storageBucket: "crwn-clothing-db-35617.appspot.com",
-  messagingSenderId: "504450862380",
-  appId: "1:504450862380:web:6239e7406f736e90e23089",
+  apiKey: "AIzaSyBlSe2mknNh1HgDvwxrC0ZLBGP01gVEGHo",
+  authDomain: "jobhunt-2eb01.firebaseapp.com",
+  projectId: "jobhunt-2eb01",
+  storageBucket: "jobhunt-2eb01.appspot.com",
+  messagingSenderId: "708946284632",
+  appId: "1:708946284632:web:b3129e149c18697a71ba2d",
 };
 
 // Initialize Firebase
