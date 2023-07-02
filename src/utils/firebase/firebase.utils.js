@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -20,11 +21,6 @@ import {
   query,
   getDocs,
 } from "firebase/firestore";
-
-// Import the functions you need from the SDKs you need
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -52,8 +48,6 @@ export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
 export const db = getFirestore();
-
-//////DATA HANDLING OF FIREBASE
 
 export const addCollectionAndDocuments = async (
   collectionKey,
@@ -85,9 +79,9 @@ export const getCategoriesAndDocumnet = async () => {
 
 export const createUserDocumentFromAuth = async (userAuth) => {
   const userDocRef = doc(db, "users", userAuth.uid);
-  console.log(userDocRef);
+  // console.log(userDocRef);
 
-  const usersnapshot = await getDoc(userDocRef); //tells us about the certain instance exits or not
+  const usersnapshot = await getDoc(userDocRef);
 
   if (!usersnapshot.exists()) {
     const { displayName, email } = userAuth;
@@ -104,13 +98,7 @@ export const createUserDocumentFromAuth = async (userAuth) => {
     }
   }
 
-  //if userdata doesnt exist
-  //create /set the document with the data from userAuth in my collection
-
-  //if userdata doesnt exist
-  //
-
-  console.log(usersnapshot);
+  // console.log(usersnapshot);
   return userDocRef;
 };
 
