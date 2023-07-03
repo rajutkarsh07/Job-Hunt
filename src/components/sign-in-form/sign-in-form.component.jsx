@@ -35,7 +35,7 @@ export const SignInForm = () => {
 
     try {
       const user = await signInAuthUserWithEmailAndPassword(email, password);
-      console.log(user);
+      // console.log(user);
       // setCurrentUser(user);
       resetformFields();
     } catch (err) {

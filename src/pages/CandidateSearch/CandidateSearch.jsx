@@ -35,7 +35,7 @@ const CandidateSearch = () => {
     }
   };
 
-  console.log(searchResults);
+  // console.log(searchResults);
 
   return (
     <div className="candidateSearch">
@@ -70,7 +70,7 @@ const CandidateSearch = () => {
         {searchResults.length > 0 ? (
           searchResults.map((user) => (
             <User
-              key={user.email}
+              key={user.id}
               name={user.name}
               email={user.email}
               role={user.role}
